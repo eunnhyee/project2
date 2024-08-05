@@ -15,23 +15,25 @@
 header {
     height: 7rem;
     width: 100%;
-    background-color: beige;
+    background: #efe5d9;
 }
 
 main {
     height: 446.5rem;
     width: 100%;
-    background-color: #e0e0e0;
+    background-color: #efe5d9;
 }
 
 footer {
     height: 72rem;
     width: 100%;
-    background-color: #8f8f8f;
+    background-color: #1e1e1e;
 }
 
 .inner {
-    height: inherit;
+    position: relative;
+    max-width: 14.7rem;
+    margin: 0 auto;
 }
 
 /* components */
@@ -53,85 +55,95 @@ footer {
 }
 
 .inner {
-    width: 100%;
+    position: relative;
     max-width: 147rem;
     margin: 0 auto;
+
 }
 
 /* ====================================
     ============== header ===============    
 ==================================== */
-nav.gnb {
+.header {
     display: block;
 }
 
-.gnb .header_inner {
+.header .gnb {
+    width: 100%;
+    height: 70px;
+    margin: 0, auto;
+    padding: 0, 80px;
+    background: rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+}
+
+.header .header_inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.gnb .header_inner .logo {
-    margin: 20px;
+.header_inner .menu_btn {
+    height: 100%;
 }
 
-.gnb .header_inner .menu {
-    width: 65.4rem;
-    justify-content: space-between;
+.header_inner .h1 {
+    font-size: 1.6rem;
+}
+
+.header_inner .logo {
+    padding-left: 90px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 19rem;
+}
+
+
+.header_util {
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+}
+
+.header_util .menu {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 9rem;
+}
+
+.header_util .menu a {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--color_bk);
+}
+
+/* .header_inner .header_gnb a {
+    justify-content: center;
     text-align: center;
-}
+} */
 
 /* ====================================
     ============== main ===============    
 ==================================== */
+main_wrap .contents {
+padding-bottom: 160px;
+}
+
 section {
     display: flex;
     flex-direction: column;
 }
 
-/* 임시 확인용 */
-section.main_visual {
-    height: 75.5rem;
-    background-color: rgb(165, 255, 138);
-}
 
-section.foodon {
-    height: 68.3rem;
-    background-color: red;
-}
-
-section.video1 {
-    height: 76.7rem;
-    background-color: rgba(255, 251, 0, 0.466);
-}
-
-section.brands {
-    height: 68.3rem;
-    background-color: red;
-}
-
-section.video2 {
-    height: 76.7rem;
-    background-color: rgba(255, 251, 0, 0.466);
-}
-
-section.contents {
-    height: 50rem;
-    background-color: rgba(0, 68, 255, 0.466);
-}
-
-/* ----- */
-
-section.main_visual {}
-
-section.foodon {}
-
-section.video1 {}
-
-section.brands {}
-
-section.video2 {}
-
-section.contents {}
 
 /* ====================================
     ============== footer ===============    
