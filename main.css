@@ -1,0 +1,173 @@
+:root {
+    /* Project */
+    --color_mc: #5c584f;
+    --color_pc: #da2128;
+    --color_bk: #000;
+    --color_df: #212121;
+    --color_ct: #ccc;
+    --color_cl: #eee;
+    --color_ly: #f1e9df;
+    --color_lg: #f3f3f3;
+    --color_wt: #ffffff
+}
+
+/* 나중에삭제 */
+header {
+    height: 7rem;
+    width: 100%;
+    background-color: beige;
+}
+
+main {
+    height: 446.5rem;
+    width: 100%;
+    background-color: #e0e0e0;
+}
+
+footer {
+    height: 72rem;
+    width: 100%;
+    background-color: #8f8f8f;
+}
+
+.inner {
+    height: inherit;
+}
+
+/* components */
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.df {
+    display: flex;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner {
+    width: 100%;
+    max-width: 147rem;
+    margin: 0 auto;
+}
+
+/* ====================================
+    ============== header ===============    
+==================================== */
+nav.gnb {
+    display: block;
+}
+
+.gnb .header_inner {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gnb .header_inner .logo {
+    margin: 20px;
+}
+
+.gnb .header_inner .menu {
+    width: 65.4rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* ====================================
+    ============== main ===============    
+==================================== */
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 임시 확인용 */
+section.main_visual {
+    height: 75.5rem;
+    background-color: rgb(165, 255, 138);
+}
+
+section.foodon {
+    height: 68.3rem;
+    background-color: red;
+}
+
+section.video1 {
+    height: 76.7rem;
+    background-color: rgba(255, 251, 0, 0.466);
+}
+
+section.brands {
+    height: 68.3rem;
+    background-color: red;
+}
+
+section.video2 {
+    height: 76.7rem;
+    background-color: rgba(255, 251, 0, 0.466);
+}
+
+section.contents {
+    height: 50rem;
+    background-color: rgba(0, 68, 255, 0.466);
+}
+
+/* ----- */
+
+section.main_visual {}
+
+section.foodon {}
+
+section.video1 {}
+
+section.brands {}
+
+section.video2 {}
+
+section.contents {}
+
+/* ====================================
+    ============== footer ===============    
+==================================== */
+
+
+
+
+
+/* ====================================
+    ============== 이하는 나중에 ===============    
+==================================== */
+button,
+.button {
+    display: block;
+    padding: 1.6rem 4.6rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.cta {
+    background-color: transparent;
+    border: 1px solid var(--gray_800);
+}
+
+.ghost {
+    background-color: var(--gray_800);
+    border: 1px solid transparent;
+}
+
+.normal {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+/* ====================================
+    ============== 나중에 ===============    
+==================================== */
