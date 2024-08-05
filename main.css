@@ -30,6 +30,7 @@ footer {
 }
 
 /* components */
+
 .pr {
     position: relative;
 }
@@ -48,7 +49,7 @@ footer {
 }
 
 .inner {
-    position: relative;
+    width: 100%;
     max-width: 147rem;
     margin: 0 auto;
 
@@ -57,7 +58,7 @@ footer {
 /* ====================================
     ============== header ===============    
 ==================================== */
-.header {
+/* .header {
     display: block;
 }
 
@@ -68,27 +69,43 @@ footer {
     padding: 0, 80px;
     background: rgba(255, 255, 255, 0.4);
     box-sizing: border-box;
+} */
+
+.pc.gnb {
+    display: block;
 }
 
-.header .header_inner {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+.gnb {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.gnb .inner {
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.header_inner .menu_btn {
+.gnb .inner .menu {
+    column-gap: 9rem;
+    justify-content: space-between;
     height: 100%;
+    text-align: center;
+}
+
+.gnb .inner .menu_btn a {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 .header_inner .h1 {
     font-size: 1.6rem;
 }
 
-.header_inner .logo {
+.gnb .inner .logo {
     padding-left: 90px;
     left: 0;
     top: 50%;
