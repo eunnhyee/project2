@@ -14,7 +14,6 @@
 /* 나중에삭제 */
 header {
     height: 7rem;
-    width: 100%;
     background: #efe5d9;
 }
 
@@ -28,12 +27,6 @@ footer {
     height: 72rem;
     width: 100%;
     background-color: #1e1e1e;
-}
-
-.inner {
-    position: relative;
-    max-width: 14.7rem;
-    margin: 0 auto;
 }
 
 /* components */
@@ -134,8 +127,23 @@ footer {
 /* ====================================
     ============== main ===============    
 ==================================== */
-main_wrap .contents {
-padding-bottom: 160px;
+.main_wrap {
+    background: #efe5d9;
+}
+
+.main_wrap .contents {
+    padding-bottom: 160px;
+    position: relative;
+}
+
+.main_visual {
+    padding-top: 10rem;
+
+}
+
+.main_visual img {
+    width: 100%;
+    vertical-align: top;
 }
 
 section {
